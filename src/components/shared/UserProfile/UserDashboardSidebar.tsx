@@ -8,15 +8,12 @@ import {
   X,
   Settings,
   UserRoundPen,
-  Camera,
   LibraryBig,
   StarHalf,
 } from "lucide-react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import dummyProfile from "@/assets/Images/dummyProfile.png";
 
 const Family_USER_SIDEBAR_LINKS = [
   {
@@ -132,7 +129,7 @@ const UserDashboardSidebar = () => {
             {/* user profile */}
             <div className="relative mb-3">
               <Image
-                src={imageUrl ? imageUrl : dummyProfile}
+                src={imageUrl ? imageUrl : "/dummyProfile.png"}
                 alt="dummyProfile"
                 width={900}
                 height={700}

@@ -1,7 +1,6 @@
 "use client";
 import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-menubar";
-import dummyProfile from "@/assets/images/make-connect/dummyProfile.png";
 import Image from "next/image";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -14,6 +13,7 @@ import CountryStateCitySelector from "@/components/ui/CountryStateCitySelector";
 import { Controller, useForm } from "react-hook-form";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { DatePicker } from "@/components/ui/date-picker";
+import dummyProfile from "@/assets/Images/make-connect/dummyProfile.png";
 
 type Client = {
   name: string;

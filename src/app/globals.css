@@ -87,10 +87,10 @@ body {
     background-size: cover;
   }
   .section-title {
-    @apply text-4xl font-semibold;
+    @apply md:text-4xl text-2xl font-semibold;
   }
   .section-subtitle {
-    @apply text-3xl font-semibold;
+    @apply md:text-3xl text-xl font-semibold;
   }
   .section-header {
     @apply md:text-5xl text-2xl font-semibold text-primary-orange text-center;

@@ -1,8 +1,7 @@
 import Image from "next/image";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import facebook from "@/assets/icons/facebook.png";
 import instagram from "@/assets/icons/instagram.png";
-import logo from "@/assets/images/logo.png";
 import Link from "next/link";
 import Container from "./Container";
 
@@ -16,7 +15,7 @@ const Footer = () => {
             <div className="bg-primary-white w-fit h-fit p-2 rounded mx-auto">
               <Link href={"/"}>
                 <Image
-                  src={logo}
+                  src={"/logo.png"}
                   alt="logo"
                   width={106}
                   height={61}

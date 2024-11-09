@@ -21,7 +21,7 @@ const OtherInformation = () => {
         <h4 className="section-subtitle text-primary-blue text-center">
           1.5x hourly rate
         </h4>
-        <p className="text-2xl text-center max-w-7xl mx-auto">
+        <p className="md:text-2xl text-center max-w-7xl mx-auto">
           NYE, New Year’s Day, Valentine's after 5pm, Easter, Memorial Day, July
           4th, Labor Day, Thanksgiving, Black Friday, Christmas Eve & Christmas
           Day
@@ -32,14 +32,14 @@ const OtherInformation = () => {
         <h4 className="section-subtitle text-primary-blue text-center">
           Cancellation Fee Policy
         </h4>
-        <p className="text-2xl text-center max-w-7xl mx-auto">
+        <p className="md:text-2xl text-center max-w-7xl mx-auto">
           If a cancellation is made within 1-24 hours of the scheduled sitting
           appointment, a $40 cancellation fee will apply. This fee helps
           compensate for the reserved time and any last-minute changes that may
           affect our sitters' schedules. We appreciate your understanding and
           cooperation.
         </p>
-        <p className="text-2xl text-center max-w-7xl mx-auto">
+        <p className="md:text-2xl text-center max-w-7xl mx-auto">
           To avoid the cancellation fee, please cancel your appointment more
           than 24 hours in advance.
         </p>

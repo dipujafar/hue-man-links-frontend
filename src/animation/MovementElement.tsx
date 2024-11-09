@@ -9,12 +9,14 @@ type TProsType = {
   className?: string;
   x?: string;
   y?: string;
+  delay?: number;
 };
 
 const MovementElement = ({
   children,
   duration,
   className,
+  delay,
   x,
   y,
 }: TProsType) => {
@@ -23,7 +25,7 @@ const MovementElement = ({
       initial={{ opacity: 0, x: x, y: y }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       exit={{ opacity: 0, x: x, y: y }}
-      transition={{ duration: duration, ease: "easeIn" }}
+      transition={{ duration: duration, delay: delay, ease: "easeIn" }}
       className={cn(className)}
     >
       {children}

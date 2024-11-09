@@ -7,10 +7,17 @@ import icon4 from "@/assets/icons/sitter/sitterPageIcon7.png";
 import Image from "next/image";
 import { MessageCircleMore } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const ProfileInfo = () => {
-  let role = "familyUser";
-  console.log(role);
+  const [role, setRole] = useState<string | null>(null);
+
+  useEffect(() => {
+    const storedRole = localStorage.getItem("role");
+    if (storedRole) {
+      setRole(storedRole);
+    }
+  }, [role]);
   return (
     <div className="lg:space-y-10 space-y-5">
       {/* Contact Button */}

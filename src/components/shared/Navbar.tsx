@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import logo from "@/assets/images/logo.png";
+
 import { Button } from "../ui/button";
 import { TableOfContents } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
   Sheet,
@@ -68,11 +68,11 @@ const Navbar = ({ className }: { className?: string }) => {
           <div>
             <Link href={"/"}>
               <Image
-                src={logo}
+                src={"/logo.png"}
                 alt="logo"
                 width={1200}
                 height={1200}
-                className="h-16 lg:h-28 w-auto brightness-110 "
+                className="h-16 xl:h-28 w-auto brightness-110 "
               />
             </Link>
           </div>
@@ -81,7 +81,7 @@ const Navbar = ({ className }: { className?: string }) => {
           <div className="flex flex-1 items-center justify-center gap-x-10">
             {/* navLinks */}
             <nav>
-              <div className=" hidden lg:flex items-center gap-x-8">
+              <div className=" hidden xl:flex items-center gap-x-8">
                 {/*------------------------ about drop down navLinks ---------------------------------- */}
                 <Menubar className="w-fit bg-transparent border-none shadow-none text-primary-white">
                   <MenubarMenu>
@@ -109,7 +109,7 @@ const Navbar = ({ className }: { className?: string }) => {
                 </Menubar>
                 {/* -------------------------------------------------- */}
 
-                <ul className=" text-primary-white items-center gap-8 text-light-black lg:flex">
+                <ul className=" text-primary-white items-center gap-8 text-light-black xl:flex">
                   {navLinks?.map((item, idx) => (
                     <li
                       key={idx}
@@ -138,7 +138,7 @@ const Navbar = ({ className }: { className?: string }) => {
           {/* login button */}
 
           {/* nav button */}
-          <div className="hidden items-center gap-3 lg:flex">
+          <div className="hidden items-center gap-3 xl:flex">
             <Link href={"/link-sitters"}>
               <Button className="bg-primary-blue text-primary-white  py-8 xl:px-10 rounded-full font-medium">
                 Become a Link <br /> Sitters
@@ -154,7 +154,7 @@ const Navbar = ({ className }: { className?: string }) => {
           </div>
 
           {/* small device view */}
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             <Sheet>
               <SheetTrigger asChild>
                 <TableOfContents color="#fff" size={24} />
@@ -165,7 +165,7 @@ const Navbar = ({ className }: { className?: string }) => {
                     <div>
                       <Link href={"/"}>
                         <Image
-                          src={logo}
+                          src={"/logo.png"}
                           alt="logo"
                           width={1200}
                           height={1200}

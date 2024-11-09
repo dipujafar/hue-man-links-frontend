@@ -1,5 +1,5 @@
 import InfoSection from "@/components/shared/InfoSection";
-import sectionImage from "@/assets/Images/about-us-image/aboutImage3.png";
+import sectionImage from "@/assets/Images/about-us-image/aboutimage3.png";
 import waterMark from "@/assets/Images/about-us-image/waterMarkImage.png";
 
 const MeetConnector = () => {

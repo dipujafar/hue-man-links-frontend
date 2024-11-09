@@ -11,7 +11,6 @@ import CountryStateCitySelector from "@/components/ui/CountryStateCitySelector";
 import { Controller, useForm } from "react-hook-form";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { DatePicker } from "@/components/ui/date-picker";
-import Profile from "@/assets/Images/dummyProfile.png";
 
 type Client = {
   name: string;
@@ -207,7 +206,7 @@ const FamilyUserProfileContainer = () => {
           <div className="pt-6  ">
             <div className="relative">
               <Image
-                src={imageUrl ? imageUrl : Profile}
+                src={imageUrl ? imageUrl : "/dummyProfile.png"}
                 alt="dummyProfile"
                 width={900}
                 height={700}

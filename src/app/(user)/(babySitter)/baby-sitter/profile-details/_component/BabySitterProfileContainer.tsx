@@ -18,7 +18,6 @@ import { PhoneInput } from "@/components/ui/PhoneInput";
 import { Controller, useForm } from "react-hook-form";
 import CountryStateCitySelector from "@/components/ui/CountryStateCitySelector";
 import { useRouter } from "next/navigation";
-import Profile from "@/assets/Images/dummyProfile.png";
 import AvailabilitySelector from "@/components/ui/availability-selector";
 
 const BabySitterProfileContainer = () => {
@@ -155,7 +154,7 @@ const BabySitterProfileContainer = () => {
             <div className="pt-6  flex items-center  flex-col">
               <div className="relative ">
                 <Image
-                  src={imageBlobUrl || Profile}
+                  src={imageBlobUrl || "/dummyProfile.png"}
                   alt="dummyProfile"
                   width={900}
                   height={700}

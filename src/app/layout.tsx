@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     default: "HUE-MAN Link ",
     template: "%s | HUE-MAN Links",
   },
-  description: "This is official website of  Hue-Man Links",
+  description:
+    "This is official website of  Hue-Man Links. This is a platform for linking families with sitters.",
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "@/assets/images/logo.png";
+
 import {
   CalendarDays,
   Heart,
@@ -56,7 +56,7 @@ const UserNavbar = ({ className }: { className?: string }) => {
         <div>
           <Link href={"/"}>
             <Image
-              src={logo}
+              src={"/logo.png"}
               alt="logo"
               width={1200}
               height={1200}
@@ -144,7 +144,7 @@ const UserNavbar = ({ className }: { className?: string }) => {
                   <div>
                     <Link href={"/"}>
                       <Image
-                        src={logo}
+                        src={"/logo.png"}
                         alt="logo"
                         width={1200}
                         height={1200}

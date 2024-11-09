@@ -11,6 +11,7 @@ type TProps = {
   image: StaticImageData;
   imageClass?: string;
   title?: string;
+  BannerTitle?: string;
   titleClass?: string;
   btn?: string;
   btnClass?: string;
@@ -21,6 +22,7 @@ const TopBanner = ({
   image,
   imageClass,
   title,
+  BannerTitle,
   titleClass,
   btn,
   btnClass,
@@ -39,6 +41,13 @@ const TopBanner = ({
           <h3 className={cn(titleClass)}>
             <AnimatedText duration={0.5} delay={0.02}>
               {title}
+            </AnimatedText>
+          </h3>
+        )}
+        {BannerTitle && (
+          <h3 className={cn(titleClass)}>
+            <AnimatedText duration={0.5} delay={0.02}>
+              {BannerTitle}
             </AnimatedText>
           </h3>
         )}

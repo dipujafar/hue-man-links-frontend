@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import MembershipPlanContainer from "./_components/MembershipPlanContainer";
 import LinkRates from "./_components/LinkRates";
 import OtherInformation from "./_components/OtherInformation";
+import AnimatedText from "@/animation/AnimatedText";
 
 export const metadata: Metadata = {
   title: "Membership and Pricing",
@@ -21,8 +22,10 @@ const MembershipPricingPage = () => {
       ></TopBanner>
       <Container className="section space-y-24">
         <div>
-          <h1 className="md:text-5xl text-3xl text-primary-blue font-semibold text-center">
-            Membership and Pricing
+          <h1 className="md:text-5xl text-2xl text-primary-blue font-semibold text-center">
+            <AnimatedText delay={0.1} duration={0.3}>
+              Membership and Pricing
+            </AnimatedText>
           </h1>
           <hr className="mt-5  border-1 border-primary-blue max-w-5xl" />
 

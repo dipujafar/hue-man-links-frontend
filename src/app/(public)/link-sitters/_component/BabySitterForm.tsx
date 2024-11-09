@@ -13,7 +13,6 @@ import {
 import { ImageIcon, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-import dummyProfile from "@/assets/images/make-connect/dummyProfile.png";
 import { PhoneInput } from "@/components/ui/PhoneInput";
 import { Controller, useForm } from "react-hook-form";
 import CountryStateCitySelector from "@/components/ui/CountryStateCitySelector";
@@ -149,8 +148,8 @@ const BabySitterForm = () => {
             <div className="pt-6  flex items-center  flex-col">
               <div className="relative ">
                 <Image
-                  src={imageUrl ? imageUrl : dummyProfile}
-                  alt="dummyProfile"
+                  src={imageUrl ? imageUrl : "/dummyProfile.png"}
+                  alt="profile"
                   width={900}
                   height={700}
                   className="size-40 rounded-full border-2 border-primary-orange"

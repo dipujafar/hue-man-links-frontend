@@ -5,9 +5,10 @@ const Hero = () => {
     <div>
       <TopBanner
         image={banner1}
-        title={`Specialized Sitters, Stronger Links: Connecting Care with Compassion`}
-        titleClass="md:text-4xl text-xl max-w-[650px] text-primary-white font-semibold bre "
-        contentClass="absolute lg:top-1/2 top-1/3"
+        title={`Specialized Sitters, Stronger Links:`}
+        BannerTitle="Connecting Care with Compassion"
+        titleClass="xl:text-6xl lg:text-5xl md:text-4xl	 text-lg   text-primary-white font-semibold text-nowrap  overflow-hidden"
+        contentClass="absolute lg:top-1/2 lg:-translate-y-10 top-1/3"
         imageClass="max-h-[100vh] "
         btn="How to Connect with Specialized Links"
         btnClass=" bg-primary-orange font-medium py-8  text-lg "
